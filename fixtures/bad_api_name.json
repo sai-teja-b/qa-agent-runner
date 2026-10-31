@@ -1,0 +1,7 @@
+{
+  "fullName": "Patient",
+  "label": "Patient",
+  "fields": [
+    {"fullName": "Name", "type": "Text", "label": "Patient Name"}
+  ]
+}

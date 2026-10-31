@@ -1,0 +1,27 @@
+{
+  "id": "metadata-validation",
+  "goal": "Validate Salesforce custom object metadata against the rules in this spec. Report pass only when every rule holds.",
+  "allowed_tools": ["read_metadata", "list_fields"],
+  "max_steps": 4,
+  "rules": [
+    {
+      "id": "api-name-suffix",
+      "type": "ends_with",
+      "path": "fullName",
+      "value": "__c",
+      "message": "Custom object API name must end with __c"
+    },
+    {
+      "id": "label-present",
+      "type": "non_empty",
+      "path": "label",
+      "message": "Label must be non-empty"
+    },
+    {
+      "id": "name-field",
+      "type": "field_exists",
+      "field": "Name",
+      "message": "A Name field must exist"
+    }
+  ]
+}

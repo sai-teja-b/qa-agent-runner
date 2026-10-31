@@ -1,0 +1,7 @@
+{
+  "fullName": "Patient__c",
+  "label": "Patient",
+  "fields": [
+    {"fullName": "ConsentStatus__c", "type": "Picklist", "label": "Consent Status"}
+  ]
+}

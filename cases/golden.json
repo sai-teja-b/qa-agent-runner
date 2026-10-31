@@ -1,0 +1,25 @@
+[
+  {
+    "id": "valid-object",
+    "fixture": "fixtures/valid_object.json",
+    "expect": "pass"
+  },
+  {
+    "id": "bad-api-name",
+    "fixture": "fixtures/bad_api_name.json",
+    "expect": "fail",
+    "expect_finding": "api-name-suffix"
+  },
+  {
+    "id": "empty-label",
+    "fixture": "fixtures/empty_label.json",
+    "expect": "fail",
+    "expect_finding": "label-present"
+  },
+  {
+    "id": "missing-name-field",
+    "fixture": "fixtures/missing_name_field.json",
+    "expect": "fail",
+    "expect_finding": "name-field"
+  }
+]
